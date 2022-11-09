@@ -19,7 +19,10 @@ Do the following:
 
    HINT: no function required
 */
-
+var votingAge = 18;
+if (votingAge >= 18) {
+  console.log(votingAge);
+}
 
 
 /*
@@ -34,9 +37,13 @@ Do the following:
    HINT: no function required
 */
 
+let firstThing = 'food'
+let secondThing = 'drink'
 
-
-
+if (firstThing !== secondThing) {
+   firstThing = secondThing;
+}
+console.log(firstThing)
 
 /*
 Task 1c - Convert Strings to Numbers (not auto tested)
@@ -49,8 +56,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+let year = Number('1999');
+console.log(year); 
 
 /*
 Task 1d - Multiply
@@ -64,6 +71,7 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
+console.log(multiply(2, 2))
 
 
 
@@ -77,10 +85,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7
 }
-
+console.log(dogYears(2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
