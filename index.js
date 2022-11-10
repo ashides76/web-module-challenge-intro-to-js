@@ -148,12 +148,12 @@ function hungryDog(weight, age) {
     } else if (weight > 15) {
       return weight * 0.02;
     }
-  } else if (age < 1) {
-    if (age >= 2 / 12 && age < 4 / 12) {
+  } else {
+    if (age <= 4 / 12) {
       return weight * 0.10;
-    } else if (age >= 4 / 12 && age < 7 / 12) {
+    } else if (age <= 7 / 12) {
       return weight * 0.05;
-    } else if (age >= 7 && age <= 12) {
+    } else {
       return weight * 0.04;
     }
   }
@@ -230,7 +230,7 @@ Using the feet function below do the following:
 */
 
 function feet(num){
-  return num * 0.0328084;
+  return num / 30.48;
 }
 console.log(feet(3));
 
@@ -254,11 +254,14 @@ let num = 5;
 function annoyingSong(num){
   return `${num} bottles of soda on the wall, ${num} bottles of soda, take one down pass it around ${num - 1} bottles of soda on the wall`
 }
-let i = 1;
-while(i < num) {
+let i = num;
+while(i > 0) {
   console.log(annoyingSong(i));
-  i++;
+  i--;
 }
+// for (let i = num; i > 0; i--) {
+//   console.log(annoyingSong(i))
+// }
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
