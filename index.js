@@ -214,9 +214,10 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(num){
+  return num * 0.621371;
 }
+console.log(miles(5));
 
 
 
@@ -228,9 +229,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(num){
+  return num * 0.0328084;
 }
+console.log(feet(3));
 
 
 
