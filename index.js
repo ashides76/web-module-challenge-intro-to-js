@@ -307,12 +307,19 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
+const vowels = ['a', 'e', 'i', 'o', 'u'];
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+  let count = 0;
+  str.toLowerCase();
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      count++;
+    }
+  }
+  return count; 
 }
-
-
+console.log('Strech1:', vowelCounter('Ashishaiou'))
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
