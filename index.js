@@ -311,15 +311,15 @@ const vowels = ['a', 'e', 'i', 'o', 'u'];
 
 function vowelCounter(str) {
   let count = 0;
-  str.toLowerCase();
-  for (let i = 0; i < str.length; i++) {
-    if (vowels.includes(str[i])) {
+  const lowerCase = str.toLowerCase();
+  for (let i = 0; i < lowerCase.length; i++) {
+    if (vowels.includes(lowerCase[i])) {
       count++;
     }
   }
   return count; 
 }
-console.log('Strech1:', vowelCounter('Ashishaiou'))
+console.log('Strech1:', vowelCounter('Ashish Desai'))
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
